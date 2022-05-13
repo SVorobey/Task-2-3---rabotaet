@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"> <!-- Подключаем CSS файл который отключает все стили по умолчанию в браузере -->   
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <script src="https://kit.fontawesome.com/c3fbd04d84.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+   <header class="navigation">
+        <a href="#" class="nav-logo">Your Logo</a>
+        <div class="icon-nav">
+            <a href="#" class="nav">Home</a>
+            <a href="#" class="nav">About</a>
+            <a href="#" class="nav">Servicing</a>
+            <a href="#" class="nav">Portfolio</a>
+            <a href="#" class="nav">Blog</a>
+            <a href="#" class="nav">Contact us</a>
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
+   </header> 
+   <section class="intro-main">
+        <div class="container">
+            <div class="wrap">
+                    <h1 class="main-header">
+                        Web development project
+                    </h1>
+                    <p class="paragraph-intro">
+                        Very suitable to support all web development projects
+                    </p>
+            </div>
+            <div class="buttons-bar">
+                <button class="btn btn-space">OUR SERVICES</button>
+                <button class="btn">HERE IS NOW</button>
+            </div> 
+            <a href="#">
+                <i class="fa-solid fa-angle-down"></i>
+            </a>    
+        </div>
+   </section>
+   <section class="about-us">
+        <div class="container">
+            <div class="intro">
+                <h2>
+                    About Us
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div> 
+            <div class="wrap-icons">
+                <div class="icon">
+                    <img src="img/internet.png" alt="Internet" class="img-icon">
+                    <h3>Awesome Icons</h3>
+                    <p class="paragraph-icon">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+                <div class="icon">
+                    <img src="img/transfer.png" alt="Transfer" class="img-icon">
+                    <h3>One page</h3>
+                    <p class="paragraph-icon">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+                <div class="icon">
+                    <img src="img/head.png" alt="Head" class="img-icon">
+                    <h3>Fully Responsive</h3>
+                    <p class="paragraph-icon">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+            </div>  
+        </div> 
+   </section>
+   <section class="our-services">
+        <div class="container"> 
+            <div class="intro">
+                <h2>
+                    Our Services
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="wrap-blocks">
+                <div class="blocks">
+                    <div class="block">
+                        <img src="img/smartphone copy.png" alt="Smartphone" class="phone phone-black">  
+                        <img src="img/smartphone_white.png" alt="Smartphone" class="phone phone-white">
+                        <h3>Research</h3>  
+                        <p>
+                            At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
+                        </p>
+                        <button class="btn-read" id="research-open-modal" onclick="ShowModal('research-open-modal','Research')">READ MORE</button>
+                    </div>
+                    <div class="block">
+                        <img src="img/smartphone copy.png" alt="Smartphone" class="phone phone-black">  
+                        <img src="img/smartphone_white.png" alt="Smartphone" class="phone phone-white">  
+                        <h3>Portfolio</h3>  
+                        <p>
+                            At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
+                        </p>
+                        <button class="btn-read" id="portfolio-open-modal" onclick="ShowModal('portfolio-open-modal','Portfolio')">READ MORE</button>
+                    </div>
+                    <div class="block">
+                        <img src="img/smartphone copy.png" alt="Smartphone" class="phone phone-black">  
+                        <img src="img/smartphone_white.png" alt="Smartphone" class="phone phone-white">
+                        <h3>Support</h3>  
+                        <p>
+                            At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
+                        </p>
+                        <button class="btn-read" id="support-open-modal" onclick="ShowModal('support-open-modal','Support')">READ MORE</button>
+                    </div>
+                </div>
+                <div class="blocks">
+                    <div class="block">
+                        <img src="img/smartphone copy.png" alt="Smartphone" class="phone phone-black">  
+                        <img src="img/smartphone_white.png" alt="Smartphone" class="phone phone-white">  
+                        <h3>Documentaion</h3>  
+                        <p>
+                            At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
+                        </p>
+                        <button class="btn-read" id="documentation-open-modal" onclick="ShowModal('documentation-open-modal','Documentaion')">READ MORE</button>
+                    </div>
+                    <div class="block">
+                        <img src="img/smartphone copy.png" alt="Smartphone" class="phone phone-black">  
+                        <img src="img/smartphone_white.png" alt="Smartphone" class="phone phone-white">
+                        <h3>Development</h3>  
+                        <p>
+                            At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
+                        </p>
+                        <button class="btn-read" id="development-open-modal" onclick="ShowModal('development-open-modal','Development')">READ MORE</button>
+                    </div>
+                    <div class="block">
+                        <img src="img/smartphone copy.png" alt="Smartphone" class="phone phone-black">  
+                        <img src="img/smartphone_white.png" alt="Smartphone" class="phone phone-white">
+                        <h3>Design</h3>  
+                        <p>
+                            At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
+                        </p>
+                        <button class="btn-read" id="design-open-modal" onclick="ShowModal('design-open-modal','Design')">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+   <section class="latest-works">
+        <div class="container"> 
+            <div class="intro">
+                <h2>
+                    Latest Works
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+                <div class="buttons">
+                    <button class="btn btn-works">
+                        ALL
+                    </button>
+                    <button class="btn btn-works">
+                        WEB DESIGN
+                    </button>
+                    <button class="btn btn-works">
+                        UI/UX DESIGN
+                    </button>
+                    <button class="btn btn-works">
+                        MOCKUPS
+                    </button>
+                </div>
+            </div>
+            <div class="pictures">
+                <div class="wrap-img">
+                    <img src="img/watch.png" alt="Hand Watch" class="png">
+                    <p class="watch">Hand Watch</p>
+                    <p class="watch design">ui/ux design</p>
+                </div>
+                <img src="img/packet.png" alt="" class="png">
+                <img src="img/t-shirt.png" alt="T-shirts" class="png">
+                <img src="img/black thing.png" alt="" class="png">
+                <img src="img/bottle.png" alt="Bottle" class="png">
+                <img src="img/bag.png" alt="Bag" class="png">
+            </div>
+            <button class="btn btn-works view">VIEW ALL</button>
+        </div>
+   </section>
+   <section class="pricing-plan">
+    <div class="container">
+        <div class="intro">
+            <h2>
+                Pricing Plan
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+        </div>
+        <div class="pricing-row">
+            <div class="pricing-row__card">
+                <div id="rectangle">
+                    <div class="name">
+                        free trail
+                    </div>
+                    <div class="price">
+                        <sup>$</sup>00 <span>per month</span>
+                    </div>  
+                </div>
+                <div id="triangle-topleft"></div>
+                <div class="card-descr-block">
+                    <p class="card__description">
+                        30 free trail
+                    </p>
+                    <p class="card__description">
+                        5 free projects
+                    </p>
+                    <p class="card__description">
+                        PHP 5 enabled
+                    </p>
+                    <p class="card__description">
+                        24/7 supports
+                    </p>
+                </div>
+                <button class="price__btn" id="00perMonth" onclick="onOrderBtnClick(event)">
+                    order now
+                </button>
+            </div>
+            <div class="pricing-row__card">
+                <div id="rectangle">
+                    <div class="name">
+                        basic
+                    </div>
+                    <div class="price">
+                        <sup>$</sup>50 <span>per month</span>
+                    </div>
+                </div>
+                <div id="triangle-topleft"></div>
+                <div class="card-descr-block">
+                    <p class="card__description">
+                        30 free trail
+                    </p>
+                    <p class="card__description">
+                        5 free projects
+                    </p>
+                    <p class="card__description">
+                        PHP 5 enabled
+                    </p>
+                    <p class="card__description">
+                        24/7 supports
+                    </p>
+                </div>
+                <button class="price__btn" id="50perMonth" onclick="onOrderBtnClick(event)">
+                    order now
+                </button>
+            </div>
+            <div class="pricing-row__card">
+                <div id="rectangle">
+                    <div class="name">
+                        ultimates
+                    </div>
+                    <div class="price">
+                        <sup>$</sup>99 <span>per month</span>
+                    </div>
+                </div>
+                <div id="triangle-topleft"></div>
+                <div class="card-descr-block">
+                    <p class="card__description">
+                        30 free trail
+                    </p>
+                    <p class="card__description">
+                        5 free projects
+                    </p>
+                    <p class="card__description">
+                        PHP 5 enabled
+                    </p>
+                    <p class="card__description">
+                        24/7 supports
+                    </p>
+                </div>
+                <button class="price__btn" id="99perMonth" onclick="onOrderBtnClick(event)">
+                    order now
+                </button>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <div class="intro">
+                <h2>
+                    Our team member
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="team__row">
+                <div class="slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-inner">
+                            <div class="slide">
+                                <div class="team__card">
+                                    <img src="img/man 1.png" alt="John">
+                                    <p class="team__name">
+                                        John Doe
+                                    </p>
+                                    <p class="team__post">
+                                        general manager
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card card2">
+                                    <img src="img/man 2.png" alt="John">
+                                    <p class="team__name">
+                                        alexa biru
+                                    </p>
+                                    <p class="team__post">
+                                        office director
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card">
+                                    <img src="img/man 3.png" alt="John">
+                                    <p class="team__name">
+                                        ronobir sing
+                                    </p>
+                                    <p class="team__post">
+                                        admin
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="team__card">
+                                    <img src="img/man 2.png" alt="John">
+                                    <p class="team__name">
+                                        alexa biru
+                                    </p>
+                                    <p class="team__post">
+                                        office director
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card card2">
+                                    <img src="img/man 1.png" alt="John">
+                                    <p class="team__name">
+                                        John Doe
+                                    </p>
+                                    <p class="team__post">
+                                        general manager
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card">
+                                    <img src="img/man 3.png" alt="John">
+                                    <p class="team__name">
+                                        ronobir sing
+                                    </p>
+                                    <p class="team__post">
+                                        admin
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="team__card">
+                                    <img src="img/man 3.png" alt="John">
+                                    <p class="team__name">
+                                        ronobir sing
+                                    </p>
+                                    <p class="team__post">
+                                        admin
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card card2">
+                                    <img src="img/man 2.png" alt="John">
+                                    <p class="team__name">
+                                        alexa biru
+                                    </p>
+                                    <p class="team__post">
+                                        office director
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card">
+                                    <img src="img/man 1.png" alt="John">
+                                    <p class="team__name">
+                                        John Doe
+                                    </p>
+                                    <p class="team__post">
+                                        general manager
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team__circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </section>
+    <section class="blogg">
+        <div class="container">
+            <div class="intro">
+                <h2>
+                    Blog
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="blog__row">
+                <div class="row__left">
+                    <img src="img/seo.png" alt="SEO">
+                </div>
+                <div class="row__right">
+                    <p class="row__title">
+                        <a href="#">SEO quis vestibulum</a>
+                    </p>
+                    <div class="row__date-category">
+                        <i class="fa-regular fa-calendar-days fa-lg"></i>
+                        <p class="date">
+                            14.07.2017
+                        </p>
+                        <i class="fa-regular fa-file fa-lg"></i>
+                        <p class="category">
+                            Development
+                        </p>
+                    </div>
+                    <p class="row__info">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>trud exercitation ullamco laboris nisi ut aliquip ex ea com-<br>modo consequat...
+                    </p>
+                </div>
+            </div>
+            <div class="blog__row">
+                <div class="row__left second-row">
+                    <p class="row__title">
+                        <a href="#">SEO quis vestibulum</a>
+                    </p>
+                    <div class="row__date-category">
+                        <i class="fa-regular fa-calendar-days fa-lg"></i>
+                        <p class="date">
+                            14.07.2017
+                        </p>
+                        <i class="fa-regular fa-file fa-lg"></i>
+                        <p class="category">
+                            Development
+                        </p>
+                    </div>
+                    <p class="row__info">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis<br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>commodo consequat...
+                    </p>
+                </div>
+                <div class="row__right">
+                    <img src="img/apple-desk-working-technology.png" alt="Apple">
+                </div>
+            </div>
+            <div class="blog__row">
+                <div class="row__left">
+                    <img src="img/imac-apple-mockup-app-38544.png" alt="IPad">
+                </div>
+                <div class="row__right">
+                    <p class="row__title">
+                        <a href="#">SEO quis vestibulum</a>
+                    </p>
+                    <div class="row__date-category">
+                        <i class="fa-regular fa-calendar-days fa-lg"></i>
+                        <p class="date">
+                            14.07.2017
+                        </p>
+                        <i class="fa-regular fa-file fa-lg"></i>
+                        <p class="category">
+                            Development
+                        </p>
+                    </div>
+                    <p class="row__info">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>trud exercitation ullamco laboris nisi ut aliquip ex ea com-<br>modo consequat...
+                    </p>
+                </div>
+            </div>
+            <div class="blog__button">
+                <button class="blogg__btn">
+                    more view
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="contact_us">
+        <div class="container">
+            <div class="intro">
+                <h2>
+                    Сontact us
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="contacts">
+                <div class="col">
+                    <div class="col__ico">
+                        <img src="img/placeholder.png" alt="Placeholder">
+                    </div>
+                    <p class="col__text">
+                        Nobinagar savar,Dhaka<br>Bangladesh
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="col__ico">
+                        <img src="img/phone-call.png" alt="Placeholder">
+                    </div>
+                    <p class="col__text">
+                        +8801743331996<br>+8801928737807
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="col__ico">
+                        <img src="img/mail.png" alt="Placeholder">
+                    </div>
+                    <p class="col__text">
+                        quickmasud@gmail.com<br>quickmasud@yahoo.com
+                    </p>
+                </div>
+            </div>
+            <form action="">
+                <div class="contacts__form">
+                    <div class="form__name-email">
+                        <input type="text" id="name" class="form__name" onkeyup="Check_validate()" placeholder="Your Name">
+                        <input type="email" id="email" class="form__email" onkeyup="Check_validate()" placeholder="Your Email">
+                    </div>
+                    <textarea name="message" id="form__message" rows="10" onkeyup="Check_validate()" placeholder="Write Message"></textarea>
+                    <button id="submit_button" class="form__button" type="button" disabled>
+                        send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        All rights Reserved © 2017
+    </footer>
+    <!-- Модальное окно -->
+    <div id="wrapper-modal"> 
+        <div id="overlay" id="modal-overlay"></div>
+        <div id="modal-window">
+            <div id="modal-header">   
+                <h2 id="model-title">Title</h2>
+            </div>
+            <div id="modal-content">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="pricing-modal-wrapper">
+        <div id="pricing-modal">
+            <span id="pricing-modal-close">&times;</span>
+            <form class="pricing-modal-form-wrapper" onchange="onFormChange(event)" onsubmit="onFormSubmit(event)">
+                <input type="text" class="pricing-modal-field" id="name" placeholder="Your Name" onchange="onFieldChange(event)">
+                <input type="email" class="pricing-modal-field" id="email" placeholder="Your Email" onchange="onFieldChange(event)">
+                <input type="text" class="pricing-modal-field" id="phone" placeholder="Your Phone" onchange="onFieldChange(event)">
+                <input type="submit" class="pricing-modal-btn" value="send" disabled>
+            </form>
+            <div id="order-accept">
+                <h3>Thank you!</h3>
+                <span>Your order has already been accepted.</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/pricing-modal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
